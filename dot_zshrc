@@ -1,0 +1,26 @@
+_zdir=${ZDOTDIR:-$HOME}
+HISTFILE=${_zdir}/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+
+# don't save when prefixed with space
+setopt HIST_IGNORE_SPACE
+# don't save duplicate lines
+setopt HIST_IGNORE_DUPS
+# share history between sessions
+setopt SHARE_HISTORY
+
+autoload -Uz compinit
+compinit
+
+# emacs-like bindings for insert mode
+bindkey -e
+
+# use starship's prompt
+eval "$(starship init zsh)"
+
+# plugins
+zsh_plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+for zsh_plugin ($zsh_plugins); do
+    source /usr/share/zsh/plugins/$zsh_plugin/$zsh_plugin.zsh
+done
