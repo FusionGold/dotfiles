@@ -1,0 +1,2 @@
+# don't add blank line between prompts
+add_newline = false
