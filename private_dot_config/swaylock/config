@@ -1,7 +1,5 @@
-clock
-indicator
 image=~/Pictures/backgrounds/cosmos.jpg
 ignore-empty-password
 show-keyboard-layout
-show-failed-attempts=true
+show-failed-attempts
 indicator-caps-lock
