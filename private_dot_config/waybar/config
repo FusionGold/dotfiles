@@ -1,0 +1,171 @@
+{
+  "layer": "top",
+
+  "modules-left": [
+    "niri/workspaces",
+    "wlr/taskbar",
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "tray",
+    "network",
+    "backlight",
+    "wireplumber",
+    "battery#discharging",
+    "battery#charging",
+    "group/group-power",
+  ],
+
+  // Modules configuration
+  "wlr/taskbar": {
+    "all-outputs": false,
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "format": " {icon} ",
+  },
+  "clock": {
+    "format": "{:%Y-%m-%d %a. %H:%M}",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 3,
+      "weeks-pos"     : "right",
+      "format": {
+        "months":     "<span color='#ffead3'><b>{}</b></span>",
+        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
+    "locale": "C",
+    "tooltip-format": "{calendar}",
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{essid} 󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "", // an empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰖩",
+    "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
+    "on-click": "alacritty --command nmtui",
+  },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "󰃚",
+      "󰃛",
+      "󰃜",
+      "󰃝",
+      "󰃞",
+      "󰃟",
+      "󰃠",
+    ],
+    "on-scroll-up": "lightctl up",
+    "on-scroll-down": "lightctl down",
+  },
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "󰖁",
+    "format-icons": [
+      "󰕿",
+      "󰖀",
+      "󰕾",
+    ],
+    "on-click": "pavucontrol",
+    "on-click-right": "volumectl toggle-mute",
+    "on-scroll-up": "volumectl up 2",
+    "on-scroll-down": "volumectl down 2",
+  },
+  "battery#discharging": {
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 20,
+    },
+    "format-discharging": "{capacity}% {icon}",
+    "format": "",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹",
+    ],
+  },
+  "battery#charging": {
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 20,
+    },
+    "format-discharging": "",
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "󰢟",
+      "󰢜",
+      "󰂆",
+      "󰂇",
+      "󰂈",
+      "󰢝",
+      "󰂉",
+      "󰢞",
+      "󰂊",
+      "󰂋",
+      "󰂅",
+    ],
+  },
+  "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-power",
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "custom/power", // First element is the "group leader" and won't ever be hidden
+      "custom/quit",
+      "custom/suspend",
+      "custom/reboot",
+    ]
+  },
+  "custom/quit": {
+    "format": "󰗼",
+    "tooltip": false,
+    "on-double-click": "niri msg action quit --skip-confirmation"
+  },
+  "custom/suspend": {
+    "format": "",
+    "tooltip": false,
+    "on-double-click": "systemctl suspend"
+  },
+  "custom/reboot": {
+    "format": "󰑐",
+    "tooltip": false,
+    "on-double-click": "systemctl reboot"
+  },
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-double-click": "systemctl poweroff"
+  },
+}
