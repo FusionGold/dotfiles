@@ -2,7 +2,7 @@
   "layer": "top",
 
   "modules-left": [
-    "niri/workspaces",
+    "hyprland/workspaces",
     "wlr/taskbar",
   ],
   "modules-center": [
@@ -16,7 +16,7 @@
     "wireplumber",
     "battery#discharging",
     "battery#charging",
-    "group/group-power",
+    "custom/power",
   ],
 
   // Modules configuration
@@ -139,38 +139,9 @@
       "󰂅",
     ],
   },
-  "group/group-power": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 500,
-      "children-class": "not-power",
-      "transition-left-to-right": false,
-    },
-    "modules": [
-      "custom/power", // First element is the "group leader" and won't ever be hidden
-      "custom/quit",
-      "custom/suspend",
-      "custom/reboot",
-    ]
-  },
-  "custom/quit": {
-    "format": "󰗼",
-    "tooltip": false,
-    "on-double-click": "niri msg action quit --skip-confirmation"
-  },
-  "custom/suspend": {
-    "format": "",
-    "tooltip": false,
-    "on-double-click": "systemctl suspend"
-  },
-  "custom/reboot": {
-    "format": "󰑐",
-    "tooltip": false,
-    "on-double-click": "systemctl reboot"
-  },
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-double-click": "systemctl poweroff"
+    "on-click": "wlogout"
   },
 }
