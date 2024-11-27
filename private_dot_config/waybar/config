@@ -25,6 +25,9 @@
     "on-click": "activate",
     "on-click-middle": "close",
     "format": " {icon} ",
+    "app_ids-mapping": {
+      "wechat": "com.tencent.WeChat",
+    },
   },
   "clock": {
     "format": "{:%Y-%m-%d %a. %H:%M}",
