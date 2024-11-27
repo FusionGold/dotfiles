@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "loginctl lock-session",
+    "text" : "lock",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate || loginctl hibernate",
+    "text" : "save",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "pgrep Hyprland && hyprctl dispatch exit || niri msg action quit --skip-confirmation",
+    "text" : "logout",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff || loginctl poweroff",
+    "text" : "poweroff",
+    "keybind" : "p"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend || loginctl suspend",
+    "text" : "suspend",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot || loginctl reboot",
+    "text" : "restart",
+    "keybind" : "r"
+}
