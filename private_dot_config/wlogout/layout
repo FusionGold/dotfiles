@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "pgrep Hyprland && hyprctl dispatch exit || niri msg action quit --skip-confirmation",
+    "action" : "pgrep -x Hyprland && hyprctl dispatch exit || niri msg action quit --skip-confirmation",
     "text" : "logout",
     "keybind" : "e"
 }
