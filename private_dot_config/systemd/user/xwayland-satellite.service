@@ -1,0 +1,16 @@
+[Unit]
+Description=Xwayland outside your Wayland
+BindsTo=graphical-session.target
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=simple
+NotifyAccess=all
+ExecStart=/usr/bin/xwayland-satellite :1
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
