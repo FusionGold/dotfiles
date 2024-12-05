@@ -1,0 +1,12 @@
+border-radius=8
+border-size=2
+background-color=#000000ff
+
+[urgency=critical]
+border-color=#ff3300ff
+
+[urgency=normal]
+border-color=#7fc8ffff
+
+[urgency=low]
+border-color=#66ffccff
