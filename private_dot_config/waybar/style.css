@@ -47,6 +47,10 @@ button:hover {
   padding: 0 10px;
 }
 
+#idle_inhibitor.activated {
+    color: #FF7F50;
+}
+
 #battery.critical:not(.charging) {
   color: #ff5722;
 }
