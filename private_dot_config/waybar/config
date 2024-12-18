@@ -45,13 +45,14 @@
     },
     "locale": "C",
     "tooltip-format": "{calendar}",
+    "tooltip": false,
   },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": "",
       "deactivated": ""
-    }
+    },
   },
   "tray": {
     "spacing": 10
@@ -65,7 +66,7 @@
       "󰤟",
       "󰤢",
       "󰤢",
-      "󰤨"
+      "󰤨",
     ],
     "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰖩",
     "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
@@ -145,6 +146,6 @@
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "wlogout"
+    "on-click": "wlogout",
   },
 }
