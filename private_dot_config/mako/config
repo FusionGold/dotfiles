@@ -1,6 +1,8 @@
 border-radius=8
 border-size=2
 background-color=#000000ff
+# above fullscreen windows
+layer=overlay
 
 [urgency=critical]
 border-color=#ff3300ff
