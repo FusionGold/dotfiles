@@ -4,7 +4,7 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/wlsunset -l 39.9 -L 116.3 -t 4200
+ExecStart=/usr/bin/wlsunset -l 39.9 -L 116.3 -t 4300
 Restart=on-failure
 
 [Install]
