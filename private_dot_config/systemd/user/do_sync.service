@@ -1,0 +1,6 @@
+[Unit]
+Description=Sync selected files
+
+[Service]
+Type=simple
+ExecStart=%h/bin/do_sync
