@@ -1,14 +1,14 @@
 border-radius=4
 border-size=2
-background-color=#4b4f38ff
+background-color=#2c3e50ff
 # above fullscreen windows
 layer=overlay
 
 [urgency=critical]
-border-color=#ff3300ff
+border-color=#e57373ff
 
 [urgency=normal]
-border-color=#9cd171ff
+border-color=#87ceebff
 
 [urgency=low]
-border-color=#cfbf30ff
+border-color=#b0c4deff

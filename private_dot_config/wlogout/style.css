@@ -9,10 +9,10 @@ window {
 }
 
 button {
-	background-color: rgba(51, 51, 51, 0.6);
-	color: #FFFFFF;
+	background-color: rgba(100, 149, 237, 0.6);
+	color: #e0f2ff;
 	margin: 2rem;
-	border-radius: 2rem;
+	border-radius: 1rem;
 	padding: 1rem;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -22,8 +22,8 @@ button {
 button:focus,
 button:active,
 button:hover {
-	background-color: rgba(21, 21, 21, 0.5);
-	border-radius: 4rem;
+	background-color: rgba(65, 105, 225, 0.7);
+	border-radius: 2rem;
 }
 
 #lock {
