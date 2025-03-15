@@ -12,3 +12,6 @@ border-color=#87ceebff
 
 [urgency=low]
 border-color=#b0c4deff
+
+[body~="Online file integrity failure"]
+invisible=1
