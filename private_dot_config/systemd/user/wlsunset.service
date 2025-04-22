@@ -2,10 +2,12 @@
 PartOf=graphical-session.target
 After=graphical-session.target
 Requisite=graphical-session.target
+ConditionEnvironment=|XDG_CURRENT_DESKTOP=niri
+ConditionEnvironment=|XDG_CURRENT_DESKTOP=Hyprland
 
 [Service]
-ExecStart=/usr/bin/wlsunset -l 39.9 -L 116.3 -t 4300
-Restart=on-failure
+ExecStart=/usr/bin/wlsunset -l 36.3 -L 116.3 -t 4000
+Restart=always
 
 [Install]
 WantedBy=graphical-session.target
