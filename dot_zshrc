@@ -136,6 +136,9 @@ alias gp='git push'
 alias gb='git branch'
 alias gc='git commit'
 alias gd='git diff'
+# docker
+alias dc='docker container'
+alias di='docker image'
 # directory stack
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
