@@ -1,9 +1,8 @@
-!qr_*
-/Documents/books/
-/Documents/misc/
-/Pictures/avatars/
-/Pictures/backgrounds/
-/bin/
-/org/
-/packages/
-/workspace/algorithm/
+!*/.git/*
+!*/.idea/*
+!*/.venv/*
+!*/.direnv/*
+!*/__pycache__/*
+!*/out/*
+/linux-home/
+/common/
