@@ -1,2 +1,4 @@
 sync_dir_permissions = "755"
 sync_file_permissions = "644"
+skip_file = "~*|.~*|*.tmp|*.swp|*.out"
+skip_dir = ".git|.idea|.venv|.direnv|.pytest_cache|__pycache__|out"
