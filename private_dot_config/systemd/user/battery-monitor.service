@@ -6,7 +6,7 @@ ConditionEnvironment=|XDG_CURRENT_DESKTOP=Hyprland
 ConditionEnvironment=|XDG_CURRENT_DESKTOP=niri
 
 [Service]
-ExecStart=%h/bin/check_battery
+ExecStart=%h/bin/check-battery
 Restart=on-failure
 
 [Install]
