@@ -10,6 +10,7 @@
   ],
   "modules-right": [
     "idle_inhibitor",
+    "mpris",
     "tray",
     "network",
     "backlight",
@@ -71,6 +72,16 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰖩",
     "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
     "on-click": "alacritty --command nmtui",
+  },
+  "mpris": {
+    "format": "{status_icon}",
+    "tooltip-format": "{player}: {dynamic}",
+    "dynamic-order": ["title", "artist", "position", "length"],
+    "status-icons": {
+      "playing": "󰐍",
+      "paused": "󰏦",
+      "stopped": "󰙧",
+    },
   },
   "backlight": {
     "format": "{percent}% {icon}",
