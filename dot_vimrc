@@ -1,0 +1,60 @@
+set nocompatible
+
+filetype plugin indent on
+syntax on
+
+set autoindent
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+
+" enable backspace
+set backspace=indent,eol,start
+" enable mouse support
+set mouse=a
+" switch between buffers without having to save first
+set hidden
+
+" always show statusline
+set laststatus=2
+" show as much as possible of the last line
+set display=lastline
+" show line numbers
+set number
+
+" show current mode in command-line
+set showmode
+" show partially typed command in the command line
+set showcmd
+
+set incsearch
+set hlsearch
+" case-insensitive search
+set ignorecase
+" searches wrap around end-of-file
+set wrapscan
+
+" faster redrawing
+set ttyfast
+" only redraw when necessary
+set lazyredraw
+
+set splitbelow
+set splitright
+
+" make current line distinct
+set cursorline
+" always report changed lines
+set report=0
+
+" enable enhanced command-line completion menu
+set wildmenu
+
+" move by visual line
+nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <expr> <Down> (v:count == 0 ? 'gj' : 'j')
+nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap <expr> <Up> (v:count == 0 ? 'gk' : 'k')
+
+set nobackup
