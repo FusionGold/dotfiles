@@ -5,7 +5,7 @@ Requisite=graphical-session.target
 ConditionEnvironment=XDG_CURRENT_DESKTOP=niri
 
 [Service]
-ExecStart=/usr/bin/swaybg -m fill -i "%h/Pictures/backgrounds/Fantasy-IcyMountain.png"
+ExecStart=/usr/bin/swaybg -m fill -i "%h/Pictures/backgrounds/background"
 Restart=on-failure
 
 [Install]
