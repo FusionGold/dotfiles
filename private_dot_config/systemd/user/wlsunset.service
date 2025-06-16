@@ -6,7 +6,7 @@ ConditionEnvironment=|XDG_CURRENT_DESKTOP=niri
 ConditionEnvironment=|XDG_CURRENT_DESKTOP=Hyprland
 
 [Service]
-ExecStart=/usr/bin/wlsunset -l 36.3 -L 116.3 -t 4000
+ExecStart=/usr/bin/wlsunset -l 36.3 -L 116.3 -t 4100
 Restart=always
 
 [Install]
