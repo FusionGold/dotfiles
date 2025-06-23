@@ -15,3 +15,6 @@ border-color=#b0c4deff
 
 [body~="Online file integrity failure"]
 invisible=1
+
+[summary="Screenshot captured"]
+default-timeout=2000
