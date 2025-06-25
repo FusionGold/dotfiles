@@ -17,4 +17,7 @@ border-color=#b0c4deff
 invisible=1
 
 [summary="Screenshot captured"]
-default-timeout=2000
+default-timeout=1800
+
+[summary="Screencast recorded"]
+default-timeout=1800
