@@ -128,7 +128,7 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias grep='grep --color=auto'
 alias sysuser='systemctl --user'
-alias cm='VISUAL="emacsclient -c" chezmoi'
+alias cm='chezmoi'
 # git
 alias gs='git status'
 alias ga='git add'
