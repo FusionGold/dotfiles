@@ -7,3 +7,4 @@ window-decoration = false
 window-theme = ghostty
 adw-toolbar-style = flat
 keybind = ctrl+enter=unbind
+clipboard-paste-protection = false
