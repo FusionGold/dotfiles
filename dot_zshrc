@@ -149,3 +149,4 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # direnv
 eval "$(direnv hook zsh)"
+eval "$(zoxide init zsh)"
