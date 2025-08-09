@@ -129,6 +129,7 @@ alias la='ls -A'
 alias grep='grep --color=auto'
 alias sysuser='systemctl --user'
 alias cm='chezmoi'
+alias xcp="rsync -aviHAXKhPS --delete --exclude='*~' --exclude=__pycache__"
 # git
 alias gs='git status'
 alias ga='git add'
