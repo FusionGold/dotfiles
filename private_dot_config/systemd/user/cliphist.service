@@ -6,7 +6,7 @@ ConditionEnvironment=|XDG_CURRENT_DESKTOP=Hyprland
 ConditionEnvironment=|XDG_CURRENT_DESKTOP=niri
 
 [Service]
-ExecStart=/usr/bin/wl-paste --watch /usr/bin/cliphist -max-items 50 store
+ExecStart=/usr/bin/wl-paste --watch /usr/bin/cliphist -max-items 100 store
 Restart=on-failure
 
 [Install]
