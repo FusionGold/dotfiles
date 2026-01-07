@@ -21,3 +21,6 @@ default-timeout=1800
 
 [summary="Screencast recorded"]
 default-timeout=1800
+
+#[app-name="Telegram Desktop"]
+#invisible=1
