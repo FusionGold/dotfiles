@@ -70,7 +70,7 @@ opt.foldmethod = "expr"
 opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 -- completely hide concealed text
-opt.conceallevel = 3
+opt.conceallevel = 0
 -- Conceal cursorline in some mode
 opt.concealcursor = "nc"
 
