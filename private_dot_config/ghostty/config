@@ -8,3 +8,5 @@ window-theme = ghostty
 adw-toolbar-style = flat
 keybind = ctrl+enter=unbind
 clipboard-paste-protection = false
+# use the default working directory
+window-inherit-working-directory = false
