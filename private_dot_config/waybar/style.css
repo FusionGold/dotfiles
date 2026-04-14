@@ -36,6 +36,11 @@ button:hover {
   background-color: #e57373;
 }
 
+#taskbar {
+  /* avoid height change due to different text
+   * https://github.com/Alexays/Waybar/issues/2026#issuecomment-1780717766 */
+  margin-top: -50px; margin-bottom: -50px;
+}
 #taskbar button {
   padding: 0 2px;
 }
@@ -48,7 +53,7 @@ button:hover {
 }
 
 #idle_inhibitor.activated {
-    color: #ffb74d;
+  color: #ffb74d;
 }
 
 #battery.critical:not(.charging) {
