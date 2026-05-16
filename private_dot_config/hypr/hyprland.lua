@@ -1,0 +1,8 @@
+require("config.options")
+require("config.monitors")
+require("config.gestures")
+require("config.animations")
+require("config.env")
+require("config.execs")
+require("config.rules")
+require("config.keybinds")
