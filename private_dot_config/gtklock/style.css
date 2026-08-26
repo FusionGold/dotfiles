@@ -1,0 +1,54 @@
+window {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#window-box {
+  background-color: rgba(113, 162, 202, 0.8);
+  padding: 30px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#clock-label {
+  font-size: 48px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+}
+
+#date-label {
+  font-size: 24px;
+  font-family: "Cascadia Mono", "JetBrains Mono", monospace;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+#input-label,
+#unlock-button {
+  color: transparent;
+  background-color: transparent;
+  opacity: 0;
+  margin-left: -9999px;
+}
+
+#input-field {
+  border-radius: 0;
+  border: 3px solid #7aabd1;
+  box-shadow: 0 0 3px #5f95be;
+}
+
+#input-field:focus {
+  border: 3px solid #3c77a8;
+  box-shadow: 0 0 4px #356d9b;
+}
+
+#error-label {
+  color: #c52f24
+}
+
+#warning-label {
+  color: #f9e2af;
+}
