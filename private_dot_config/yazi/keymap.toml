@@ -1,4 +1,4 @@
 [mgr]
 prepend_keymap = [
-	{ on = [ "c", "C" ], run = 'shell -- cat "$@" | wl-copy', desc = "copy file contents" },
+	{ on = [ "c", "C" ], run = 'shell -- cat "%h" | wl-copy', desc = "copy file contents" },
 ]
